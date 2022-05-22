@@ -1,5 +1,9 @@
 # Social-Media-Application
 
+## Team Tiny Coders
+Vineet, Jithin, Shubham, Rashmi
+
+## Problem Statement
 Create a social media application Frontend in React framework in which users can view and send
 posts on different topics.
 
@@ -21,9 +25,8 @@ websites generally provides.
 
 • Like a post
 
-Technology used:
+## Front End Technology used:
 
-Front End:
 
 • JS
 
