@@ -10,7 +10,7 @@ export default function SignUp() {
         <div className="row">
           <div className="col-sm-7 ">
             <div className="card Picdiv">
-              <img src={sigPic} />
+              <img src={sigPic} alt="signupPic" />
             </div>
           </div>
           <div className="col-sm-5 registerDiv">
