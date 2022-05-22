@@ -1,6 +1,6 @@
 import React from "react";
 import "../LoginPage/Login.css";
-import logo from "../../../src/logo.png";
+import logo from "../../Assets/img/logo.png";
 import pic from "../../Assets/images/login.jpg";
 
 export default function Login() {
