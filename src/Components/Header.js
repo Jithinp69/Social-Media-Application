@@ -1,14 +1,26 @@
 import React from "react";
-import logo from "../Assets/img/logo.png";
+import { Link } from "react-router-dom";
+import logo from "../Assets/images/logo.png";
 import "../Components/Header.css";
 
 export default function Header() {
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand navbar-custom" href="#">
-          <img src={logo} className="logo" />
-        </a>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <Link className="navbar-brand" to="/">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
       </div>
     </nav>
   );
