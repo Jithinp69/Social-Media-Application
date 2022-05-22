@@ -33,7 +33,7 @@ export default function Header() {
               </li>
             </ul>
             <div className="welcome">
-              <h6>Welcome {} </h6>
+              <h6>Welcome Tiny</h6>
             </div>
           </div>
         </div>

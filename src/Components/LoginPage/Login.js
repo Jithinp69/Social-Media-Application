@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "../LoginPage/Login.css";
 import logo from "../../Assets/images/logo.png";
 import pic from "../../Assets/images/login.jpg";
 import { Link } from "react-router-dom";
 
 export default function Login() {
+  const [headname,setheadname]=useState("")
+  const handelLoginClick=()=>{
+    setheadname("Welcome Tiny")
+  }
   return (
     <div className="fullbody">
       <h3 className="loginLogo">
@@ -34,6 +38,7 @@ export default function Login() {
                   class="form-control"
                   id="formGroupusername"
                   placeholder="Enter your Email/Username"
+                  required="required"
                 />
               </div>
               <div class="mb-3">
@@ -48,7 +53,7 @@ export default function Login() {
                 />
               </div>
               <Link to="/home">
-                <button type="button" class="btn btn-success">
+                <button type="button" class="btn btn-success " onClick={handelLoginClick}>
                   Login
                 </button>
               </Link>
