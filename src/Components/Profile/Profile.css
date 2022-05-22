@@ -1,0 +1,69 @@
+body {
+  height: 100%;
+}
+
+.about-profile {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin-top: 40px;
+}
+.profile-Div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-pic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: black;
+}
+.profile-pic img {
+  height: 100%;
+  width: 200px;
+  border-radius: 50%;
+}
+.profile-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+.social-network span {
+  margin: 12px;
+  font-size: 25px;
+}
+.SubscribeBtn-aboutus {
+  margin-top: 10px;
+  height: 50px;
+  width: 170px;
+  border-radius: 30px;
+  color: #fff;
+  text-align: center;
+  font-weight: bolder;
+  border: none;
+}
+.subsCount {
+  height: 70px;
+  margin-top: 10px;
+}
+.subsCount strong {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.about-me {
+  background-color: antiquewhite;
+  height: auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}

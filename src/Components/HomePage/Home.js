@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import profilePic from "../../Assets/images/profile.webp";
 import "../HomePage/Home.css";
 import Friends from "./Friends";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const friendsData = [
@@ -56,13 +57,16 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="homeBody">
       <div className="row">
         <div className="col-sm-2">
           <div class="card cardBody">
-            <div className="profilePic">
-              <img src={profilePic} />
-            </div>
+            <Link to="/profile">
+              <div className="profilePic">
+                <img src={profilePic} />
+              </div>
+            </Link>
+
             <div className="Homename">
               <h3>Tiny Coders</h3>
             </div>
@@ -231,7 +235,7 @@ export default function Home() {
           </div>
         </div>
         <div className="col-sm-2">
-          <div className="card">
+          <div className="friendSuggestion">
             <h4>Friends Suggestions</h4>
             <Friends friendsData={friendsData} />
           </div>

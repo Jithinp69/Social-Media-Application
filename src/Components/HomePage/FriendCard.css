@@ -25,9 +25,10 @@
   width: 60px;
   border-radius: 50%;
 }
-/* .recentSub {
-  margin-top: 30px;
-} */
+
 .friendsLogo {
   border: 1px solid black;
+}
+.friendCard {
+  margin-bottom: 10px;
 }

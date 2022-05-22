@@ -6,14 +6,16 @@ export default function FriendCard(props) {
   const profilepic = props.pic;
 
   return (
-    <div className="friendsLogo">
-      <div className="Recent-friends">
-        <div className="Recent-friends-pic">
-          <img src={profilepic} />
+    <div className="card friendCard">
+      <div className="friendsLogo">
+        <div className="Recent-friends">
+          <div className="Recent-friends-pic">
+            <img src={profilepic} />
+          </div>
+          <div className="Recent-friends-name">{props.name}</div>
         </div>
-        <div className="Recent-friends-name">{props.name}</div>
+        <button className="btn btn-primary btn-sm">Add Friend</button>
       </div>
-      <button className="btn btn-primary btn-sm">Add Friend</button>
     </div>
   );
 }
