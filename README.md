@@ -38,5 +38,20 @@ websites generally provides.
 
 • Bootstrap
 
+## Pages created
 
+> Header,
+> Login,
+> Registration,
+> Home,
+> Profile,
+> Footer
+
+## github
+
+[Jithinp69/Social-Media-Application](Jithinp69/Social-Media-Application)
+
+## heroku link
+
+[Link]()
 

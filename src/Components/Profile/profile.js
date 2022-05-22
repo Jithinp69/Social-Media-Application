@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import profilePic from "../../Assets/images/profile.webp";
 import "./profile.css";
 import { Link } from "react-router-dom";
+import EditProfile from "./editProfile";
 
 const Profile = () => {
   const [like, setLike] = useState(240);
