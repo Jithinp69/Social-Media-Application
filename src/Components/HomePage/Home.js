@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import profilePic from "../../Assets/images/profile.webp";
 import "../HomePage/Home.css";
+
 import Friends from "./Friends";
 import { Link } from "react-router-dom";
 
@@ -98,7 +99,7 @@ export default function Home() {
               <div className="">
                 <div className="col-sm-6 d-flex">
                   <div className="col-sm-2 friendpic">
-                    <img src={profilePic} />
+                    <img src={profilePic} alt="profilePic" />
                   </div>
                   <div className="col-sm-10 friendName">
                     <h5>Vineet Dixit</h5>
@@ -133,7 +134,7 @@ export default function Home() {
               <div className="">
                 <div className="col-sm-6 d-flex">
                   <div className="col-sm-2 friendpic">
-                    <img src={profilePic} />
+                    <img src={profilePic} alt="profilePic" />
                   </div>
                   <div className="col-sm-10 friendName">
                     <h5>Rashmi</h5>
@@ -142,7 +143,10 @@ export default function Home() {
               </div>
               <div class="card-body">
                 <div class="ImagePost">
-                  <img src="https://placeimg.com/640/480/any" />
+                  <img
+                    src="https://placeimg.com/640/480/any"
+                    alt="profilePic"
+                  />
                   <br></br>
                   <br></br>
                   <div className="imageText">
