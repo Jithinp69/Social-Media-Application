@@ -2,6 +2,7 @@ import React from "react";
 import "../LoginPage/Login.css";
 import logo from "../../Assets/img/logo.png";
 import pic from "../../Assets/images/login.jpg";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -10,12 +11,12 @@ export default function Login() {
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Login To <img src={logo} />
+        Login To <img src={logo} className="LoginImage" />
       </h3>
       <div className="container">
         <div className="row">
           <div className="col-sm-7">
-            <div class="card">
+            <div class="card LoginPic">
               <div class="card-body">
                 <img src={pic} class="card-img-top" alt="..." />
               </div>
@@ -23,6 +24,7 @@ export default function Login() {
           </div>
           <div className="col-sm-5">
             <div class="card p-5">
+              <br></br>
               <div class="mb-3">
                 <label for="formGroupusername" class="form-label">
                   Email/Username
@@ -50,7 +52,8 @@ export default function Login() {
               </button>
               <div className="noAccount mt-5">
                 <h6>
-                  Don't have your Account <a href="#">Register Here</a>
+                  Don't have your Account
+                  <Link to="/registrationForm"> Register Here</Link>
                 </h6>
               </div>
             </div>
