@@ -47,9 +47,11 @@ export default function Login() {
                   placeholder="Enter your password"
                 />
               </div>
-              <button type="button" class="btn btn-success">
-                Login
-              </button>
+              <Link to="/home">
+                <button type="button" class="btn btn-success">
+                  Login
+                </button>
+              </Link>
               <div className="noAccount mt-5">
                 <h6>
                   Don't have your Account
