@@ -40,16 +40,16 @@ websites generally provides.
 
 ## Pages created
 
-> Header
-> Login
-> Registration
-> Home
-> Profile
+> Header,
+> Login,
+> Registration,
+> Home,
+> Profile,
 > Footer
 
 ## github
 
-(Jithinp69/Social-Media-Application)
+[Link](Jithinp69/Social-Media-Application)
 
 ## heroku link
 
