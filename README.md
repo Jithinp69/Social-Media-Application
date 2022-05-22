@@ -49,9 +49,9 @@ websites generally provides.
 
 ## github
 
-[Link](Jithinp69/Social-Media-Application)
+[Jithinp69/Social-Media-Application](Jithinp69/Social-Media-Application)
 
 ## heroku link
 
-()
+[Link]()
 
