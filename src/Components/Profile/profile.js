@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import profilePic from "../../Assets/images/profile.webp";
 import './profile.css';
 import { Link } from "react-router-dom";
+import EditProfile from "./editProfile";
 
 
 const Profile = () => {
@@ -18,6 +19,9 @@ const Profile = () => {
         setLike(like + 1);
     };
 
+    const editProfile = () =>{
+        <EditProfile/>
+    }
     return (
         <>
             <div className="container " >
@@ -53,7 +57,7 @@ const Profile = () => {
                                         <span> <i class="fa fa-instagram" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;  @tinycoders</span>
                                         <span> <i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;  tiny@hero.com</span>
 
-                                        <button className="btn btn-success pull-right ">Edit Profile</button>
+                                        <button className="btn btn-success pull-right " onClick={editProfile}>Edit Profile</button>
                                     </div>
                                 </div>
                             </div>
