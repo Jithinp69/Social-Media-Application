@@ -52,3 +52,10 @@ textarea {
 .imageText p {
   padding: 10px;
 }
+.homeBody {
+  background-color: antiquewhite;
+  padding: 10px;
+}
+.friendSuggestion {
+  background-color: antiquewhite;
+}

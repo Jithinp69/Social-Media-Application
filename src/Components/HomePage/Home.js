@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import profilePic from "../../Assets/images/profile.webp";
 import "../HomePage/Home.css";
-import { Link } from "react-router-dom";
+
 import Friends from "./Friends";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const friendsData = [
@@ -57,20 +58,20 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className="homeBody">
       <div className="row">
         <div className="col-sm-2">
-          {/* Redirecting to profile page */}
-          <Link to="/profile" >
-            <div className="card cardBody">
+          <div class="card cardBody">
+            <Link to="/profile">
               <div className="profilePic">
-                <img src={profilePic} alt="profilePic" />
+                <img src={profilePic} />
               </div>
-              <div className="Homename">
-                <h3>Tiny Coders</h3>
-              </div>
+            </Link>
+
+            <div className="Homename">
+              <h3>Tiny Coders</h3>
             </div>
-          </Link>
+          </div>
         </div>
         <div className="col-sm-8">
           <div>
@@ -142,7 +143,10 @@ export default function Home() {
               </div>
               <div class="card-body">
                 <div class="ImagePost">
-                  <img src="https://placeimg.com/640/480/any" alt="profilePic" />
+                  <img
+                    src="https://placeimg.com/640/480/any"
+                    alt="profilePic"
+                  />
                   <br></br>
                   <br></br>
                   <div className="imageText">
@@ -235,7 +239,7 @@ export default function Home() {
           </div>
         </div>
         <div className="col-sm-2">
-          <div className="card">
+          <div className="friendSuggestion">
             <h4>Friends Suggestions</h4>
             <Friends friendsData={friendsData} />
           </div>
