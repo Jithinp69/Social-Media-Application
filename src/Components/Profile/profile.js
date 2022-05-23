@@ -21,6 +21,7 @@ const Profile = () => {
 
     const editProfile = () =>{
         <EditProfile/>
+        console.log("edit");
     }
     return (
         <>
